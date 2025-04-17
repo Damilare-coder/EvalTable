@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvalTable</title>
+</head>
+
+<style>
+
+body{
+    background-image: linear-gradient(rgba(3,3,25, 0.8), rgba(0,0,0,0.5)), url(/img/pexels-steve-845242.jpg);
+    background-size: cover;    
+    text-align: center;
+    margin-top: 30px;
+    /* gap: 20px; */
+    }
+
+.rows{
+    padding: 5px;
+    width: 155px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.cols{
+    padding: 5px;
+    width: 155px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.selectE{
+    padding: 5px;
+    width: 155px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn{
+    padding: 5px;
+    width: 155px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+
+.dis{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+    width:100%;
+}
+
+</style>
+
+
+<body>
+
+    
+
+
+
+    <input class="rows" id="rowNumber" placeholder="Rows">
+    <input class="cols" id="colNumber" placeholder="Columns">
+    <select class="selectE" id="selectEval">
+
+        <option value="+">ADD</option>
+        <option value="-">SUBTACT</option>
+        <option value="*">MULTIPLY</option>
+        <option value="/">DIVIDE</option>
+    </select>
+
+    <button class="btn" onclick="displayTable()">Make me a table</button>
+
+    <audio id="tableSound" src="audio/ssstik.io_1741855298768.mp3"></audio>
+
+    <div class="dis" id="dispTable"></div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
