@@ -24,7 +24,7 @@ function displayTable() {
                 result = (j !== 0) ? (i / j).toFixed(2) : "infinite";
             }
 
-            table += `${i} ${sign} ${j}  =  ${result}  <br> <br>`;
+            table += `${i} ${sign} ${j}  =  ${result} <br> <br> <br>`;
         }
         table += "</td>";
     }
